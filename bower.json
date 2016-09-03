@@ -1,0 +1,25 @@
+{
+  "name": "Symfony_Polymer",
+  "authors": [
+    "Guikingone <guillaume.loulier@hotmail.fr>"
+  ],
+  "description": "A simplace studie case of using Polymer into Symfony 3",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#1.6.0",
+    "paper-elements": "polymerelements/paper-elements#^1.0.7",
+    "iron-elements": "polymerelements/iron-elements#^1.0.10"
+  },
+  "scripts": {
+    "postinstall": "cp web/dev/js/Polymer/**/*.js web/prod/js/"
+  }
+}

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <paper-button raised> Hey !</paper-button raised>
+    <symfony-elements></symfony-elements>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('dev/js/Polymer/Symfony-elements.js') }}"></script>
+{% endblock %}
